@@ -1,0 +1,82 @@
+:root {
+    --pink: #e2059cff;
+    --blue: #5300ffff;
+    --bg: #211a1dff;
+    --sec_bg: #9197aeff;
+}
+
+body {
+    background: var(--bg);
+    padding-top: 5em;
+}
+
+main {
+    animation: fade 0.5s 2s forwards;
+    opacity: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.intro h1 {
+    color: whitesmoke;
+    font-family: monospace;
+    overflow: hidden;
+    /* Hide content until animation starts */
+    border-right: .15em solid var(--blue);
+    /* Cursor */
+    white-space: nowrap;
+    /* Single line */
+    margin: 0 auto;
+    /* scrolling effect */
+    letter-spacing: .15em;
+    animation: typing 2s steps(28, end), blink-caret .75s step-end infinite;
+}
+
+#socials {
+    background: var(--sec_bg);
+}
+
+@media (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+}
+
+/* Fading Effect */
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--blue)
+    }
+}

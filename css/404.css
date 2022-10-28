@@ -1,0 +1,119 @@
+:root {
+    --pink: #e2059cff;
+    --blue: #5300ffff;
+    --bg: #211a1dff;
+    --sec_bg: #9197aeff;
+}
+
+body {
+    background: var(--bg);
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#message {
+    background: white;
+    max-width: 360px;
+    margin: 8% auto 16px;
+    padding: 32px 24px 16px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+#dc {
+    max-width: 360px;
+    margin: auto auto 16px;
+    padding: 32px 24px 16px;
+}
+
+#message h3 {
+    color: #888;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 16px 0 12px;
+}
+
+#message h1 {
+    font-size: 22px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 0 16px;
+}
+
+#message p {
+    line-height: 140%;
+    margin: 16px 0 24px;
+    font-size: 14px;
+}
+
+#wrapper-dc::before {
+    content: '';
+    position: fixed;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+#wrapper-dc::after {
+    content: '';
+    position: fixed;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+#wrapper-dc::before,
+#wrapper-dc::after {
+    background: linear-gradient(235deg, var(--blue), #060c21, var(--pink));
+}
+
+@media (max-width: 600px) {
+
+    body,
+    #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
+    }
+
+    body {
+        border-top: 16px transparent;
+    }
+
+    #wrapper-dc::before {
+        content: '';
+        position: fixed;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        background: #fff;
+        z-index: -1;
+    }
+
+    #wrapper-dc::after {
+        content: '';
+        position: fixed;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        background: #fff;
+        z-index: -1;
+        filter: blur(40px);
+    }
+
+    #wrapper-dc::before,
+    #wrapper-dc::after {
+        background: linear-gradient(235deg, var(--blue), #060c21, var(--pink));
+    }
+}
