@@ -13,7 +13,7 @@
       },
       {
         "source": "/**/*",
-        "destination": "./public/404.html" // Todo: Find a way to acces 404.css everytime or implement it in the html file
+        "destination": "./public/404.html"
       }
     ],
     "cleanUrls": true
