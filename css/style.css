@@ -3,6 +3,12 @@
     --blue: #5300ffff;
     --bg: #211a1dff;
     --sec_bg: #474d58;
+    --spotify: #1DB954;
+    --discord: #5865F2;
+    --twitter: #1DA1F2;
+    --steam: #1b2838;
+    --ubisoft: #ffffff;
+    --github: #000000;
     color-scheme: dark;
 }
 
@@ -12,6 +18,7 @@ body {
     overflow-x: hidden;
     margin: 0
 }
+
 
 .landing {
     overflow: hidden
@@ -75,8 +82,28 @@ main {
     transition: fill .1s
 }
 
-.social-icon:hover {
-    fill: var(--pink)
+.spotify:hover {
+    fill: var(--spotify);
+}
+
+.twitter:hover {
+    fill: var(--twitter)
+}
+
+.steam:hover {
+    fill: var(--steam);
+}
+
+.ubisoft:hover {
+    fill: var(--ubisoft)
+}
+
+.github:hover {
+    fill: var(--github)
+}
+
+.discord-icon:hover {
+    fill: var(--discord)
 }
 
 .Discord {
