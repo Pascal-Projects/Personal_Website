@@ -82,7 +82,7 @@ main {
 }
 
 
-.wrapper {
+.intro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -91,7 +91,7 @@ main {
     justify-content: center;
 }
 
-.intro h1 {
+.wrapper h1 {
     color: whitesmoke;
     font-family: cursive;
     overflow: hidden;
