@@ -72,23 +72,44 @@ main {
     -ms-flex-pack: center;
     justify-content: center;
     font-size: xx-large;
-    width: 20vw;
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
+    width: 35vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
     border-radius: 8px;
     -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
     font-family: monospace;
 }
 
+.pftf {
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--sec_bg);
+    text-decoration-color: var(--sec_bg);
+}
 
 .intro {
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: transparent;
+    background: -webkit-gradient(linear, right top, left bottom, from(var(--blue)), to(var(--pink)));
+    background: -o-linear-gradient(right top, var(--blue), var(--pink));
+    background: linear-gradient(to left, var(--blue), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .wrapper h1 {
@@ -127,6 +148,12 @@ main {
 .socials:hover {
     -webkit-box-shadow: 4px 4px 20px 5px var(--pink);
     box-shadow: 4px 4px 20px 5px var(--pink);
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s;
 }
 
 .social {
@@ -146,26 +173,44 @@ main {
 
 .spotify:hover {
     fill: var(--spotify);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
+    transition: fill .5s;
 }
 
 .twitter:hover {
-    fill: var(--twitter)
+    fill: var(--twitter);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
+    transition: fill .5s;
 }
 
 .steam:hover {
     fill: var(--steam);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
+    transition: fill .5s;
 }
 
 .ubisoft:hover {
-    fill: var(--ubisoft)
+    fill: var(--ubisoft);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
+    transition: fill .5s;
 }
 
 .github:hover {
-    fill: var(--github)
+    fill: var(--github);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
+    transition: fill .5s;
 }
 
 .discord-icon:hover {
-    fill: var(--discord)
+    fill: var(--discord);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
+    transition: fill .5s;
 }
 
 .Discord {
@@ -193,6 +238,12 @@ main {
 .discord-activity:hover {
     -webkit-box-shadow: 4px 4px 20px 5px var(--pink);
     box-shadow: 4px 4px 20px 5px var(--pink);
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s;
 }
 
 @media (max-width: 600px) {

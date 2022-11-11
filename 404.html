@@ -8,6 +8,13 @@
   <link rel="shortcut icon" href="./assets/Logo - Remade.png" type="image/x-icon">
 </head>
 <style>
+  /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
   :root {
     --pink: #e2059cff;
     --blue: #5300ffff;
@@ -80,11 +87,13 @@
     right: -2px;
     background: #fff;
     z-index: -1;
+    -webkit-filter: blur(40px);
     filter: blur(40px);
   }
 
   #wrapper-dc::before,
   #wrapper-dc::after {
+    background: -o-linear-gradient(215deg, var(--blue), #060c21, var(--pink));
     background: linear-gradient(235deg, var(--blue), #060c21, var(--pink));
   }
 
@@ -94,6 +103,7 @@
     #message {
       margin-top: 0;
       background: white;
+      -webkit-box-shadow: none;
       box-shadow: none;
     }
 
@@ -121,11 +131,13 @@
       right: -2px;
       background: #fff;
       z-index: -1;
+      -webkit-filter: blur(40px);
       filter: blur(40px);
     }
 
     #wrapper-dc::before,
     #wrapper-dc::after {
+      background: -o-linear-gradient(215deg, var(--blue), #060c21, var(--pink));
       background: linear-gradient(235deg, var(--blue), #060c21, var(--pink));
     }
   }
