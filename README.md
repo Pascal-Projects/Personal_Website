@@ -1,6 +1,9 @@
 # Personal Website
 This is the source code of my personal website 
-You can visit an deveopment edition here: https://pascal-projects.github.io/Personal_Website/ or https://personal-website-devv.web.app
+You can visit it here: https://pascal-projects.web.app
+
+
+Here are two development-previews: https://pascal-projects.github.io/Personal_Website/ or https://personal-website-devv.web.app
 
 
 If you have any questions you can reach me on discord: <br><br>
