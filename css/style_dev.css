@@ -54,24 +54,29 @@ body {
 }
 
 main {
+    -webkit-animation: fade 0.5s 2s forwards;
     animation: fade 0.5s 2s forwards;
     opacity: 0;
 }
 
 .aboutme {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     -ms-flex-pack: center;
+    -webkit-box-pack: center;
     justify-content: center;
     font-size: xx-large;
     width: 35vw;
     margin-left: 7.5vw;
     margin-right: 7.5vw;
     border-radius: 8px;
+    -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
     font-family: monospace;
 }
@@ -79,14 +84,15 @@ main {
 .pftf {
     text-decoration: underline;
     -webkit-text-decoration-color: var(--sec_bg);
-    -moz-text-decoration-color: var(--sec_bg);
-         text-decoration-color: var(--sec_bg);
+    text-decoration-color: var(--sec_bg);
 }
 
 .title {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-pack: center;
+    -webkit-box-pack: center;
     justify-content: center;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -99,6 +105,8 @@ main {
     font-weight: 900;
     line-height: 1.1;
     color: transparent;
+    background: -o-linear-gradient(right, var(--blue), var(--pink));
+    background: -webkit-gradient(linear, right top, left top, from(var(--blue)), to(var(--pink)));
     background: linear-gradient(to left, var(--blue), var(--pink));
     -webkit-background-clip: text;
     background-clip: text;
@@ -117,29 +125,39 @@ main {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
+    -webkit-animation: typing 2s steps(28, end), blink-caret .75s step-end infinite;
     animation: typing 2s steps(28, end), blink-caret .75s step-end infinite;
 }
 
 .socials {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     -ms-flex-pack: center;
+    -webkit-box-pack: center;
     justify-content: center;
     background-color: var(--sec_bg);
     width: 25vw;
     margin-left: 12.5vw;
     margin-right: 12.5vw;
     border-radius: 8px;
+    -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+    -webkit-box-shadow: 4px 4px 10px 2px var(--pink);
     box-shadow: 4px 4px 10px 2px var(--pink);
 }
 
 .socials:hover {
+    -webkit-box-shadow: 4px 4px 20px 5px var(--blue);
     box-shadow: 4px 4px 20px 5px var(--blue);
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    -o-transition: box-shadow .5s;
     transition: box-shadow .5s;
     transition: box-shadow .5s, -webkit-box-shadow .5s;
 }
@@ -152,48 +170,66 @@ main {
 .social-icon {
     height: 2em;
     fill: var(--bg);
+    -webkit-transition: fill .1s;
+    -o-transition: fill .1s;
     transition: fill .1s;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
 }
 
 .spotify:hover {
     fill: var(--spotify);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
     transition: fill .5s;
 }
 
 .twitter:hover {
     fill: var(--twitter);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
     transition: fill .5s;
 }
 
 .steam:hover {
     fill: var(--steam);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
     transition: fill .5s;
 }
 
 .ubisoft:hover {
     fill: var(--ubisoft);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
     transition: fill .5s;
 }
 
 .github:hover {
     fill: var(--github);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
     transition: fill .5s;
 }
 
 .discord-icon:hover {
     fill: var(--discord);
+    -webkit-transition: fill .5s;
+    -o-transition: fill .5s;
     transition: fill .5s;
 }
 
 .Discord {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     -ms-flex-pack: center;
+    -webkit-box-pack: center;
     justify-content: center;
     margin-left: 12.5vw;
     margin-right: 12.5vw;
@@ -202,19 +238,27 @@ main {
 }
 
 .discord-activity {
+    -webkit-box-shadow: 4px 4px 10px 2px var(--pink);
     box-shadow: 4px 4px 10px 2px var(--pink);
     border-radius: 10px;
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    -o-transition: box-shadow .5s;
     transition: box-shadow .5s;
     transition: box-shadow .5s, -webkit-box-shadow .5s;
 }
 
 a {
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
     transition: all 2s;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
 }
 
 .discord-activity:hover {
+    -webkit-box-shadow: 4px 4px 20px 5px var(--blue);
     box-shadow: 4px 4px 20px 5px var(--blue);
 }
 
@@ -225,6 +269,16 @@ a {
 }
 
 /* Fading Effect */
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 @keyframes fade {
     from {
@@ -238,6 +292,16 @@ a {
 
 /* Typing effect */
 
+@-webkit-keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
 @keyframes typing {
     from {
         width: 0
@@ -249,6 +313,18 @@ a {
 }
 
 /* Cursor Effect */
+
+@-webkit-keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--blue)
+    }
+}
 
 @keyframes blink-caret {
 
