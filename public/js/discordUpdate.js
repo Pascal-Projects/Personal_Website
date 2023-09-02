@@ -6,5 +6,5 @@ window.onload = function (){
         image.src = image.src.split("?")[0] + "?" + new Date().getTime() + "?idleMessage=Currently%20chillin...&bg=474d58&showDisplayName=true&hideBadges=true";
     }
 
-    setInterval(updateImage, 1000)
+    setInterval(updateImage, 500)
 }

@@ -7,5 +7,5 @@ window.onload = function (){
         image.src = image.src.split("?")[0] + "?" + new Date().getTime() + "idleMessage=Contact%20me%20even%20if%20I'm%20offline...&bg=211a1dff&showDisplayName=true&hideBadges=true";
     }
 
-    setInterval(updateImage, 1000)
+    setInterval(updateImage, 500)
 }

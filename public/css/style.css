@@ -216,11 +216,7 @@ a {
     box-shadow: 4px 4px 20px 5px var(--blue);
 }
 
-@media (max-width: 600px) {
-    .logo {
-        display: none;
-    }
-}
+/*TODO: Add Support for Mobile and Tablets*/
 
 /* Fading Effect */
 
