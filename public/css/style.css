@@ -217,11 +217,6 @@ a {
 }
 
 /*TODO: Add Support for Mobile and Tablets*/
-@media (max-width: 600px) {
-    .logo {
-        display: none;
-    }
-}
 
 /* Fading Effect */
 
