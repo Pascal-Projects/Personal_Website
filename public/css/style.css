@@ -266,7 +266,6 @@
         font-weight: 900;
         line-height: 1.1;
         color: transparent;
-        /*background: linear-gradient(to left, var(--blue), var(--pink));*/
         background-color: var(--pink);
         animation: textfading 5s infinite 2.5s;
         -webkit-background-clip: text;
@@ -318,7 +317,6 @@
     .social-icon {
         height: 2em;
         fill: var(--bg);
-        transition: fill .1s;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
     }
 
@@ -344,7 +342,6 @@
     }
 
     a {
-        transition: all 2s;
         display: -ms-flexbox;
         display: flex;
     }
