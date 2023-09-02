@@ -216,6 +216,7 @@ a {
     box-shadow: 4px 4px 20px 5px var(--blue);
 }
 
+/*TODO: Add Support for Mobile and Tablets*/
 @media (max-width: 600px) {
     .logo {
         display: none;
