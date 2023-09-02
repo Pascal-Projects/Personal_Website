@@ -12,211 +12,372 @@
     color-scheme: dark;
 }
 
-body {
-    background: var(--bg);
-    padding-top: 5em;
-    overflow-x: hidden;
-    margin: 0
+@media (min-width: 600px) {
+    .landing {
+        overflow: hidden
+    }
+
+    .landing-grid {
+        width: 100%;
+        height: 100%;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 50px;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        margin-top: 10em;
+    }
+
+    .landing-grid>*:nth-child(1) {
+
+        -ms-grid-row: 1;
+
+        grid-row: 1;
+        -ms-grid-column: 1;
+        grid-column: 1;
+    }
+
+    .landing-grid>*:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    body {
+        background: var(--bg);
+        padding-top: 5em;
+        overflow-x: hidden;
+        margin: 0
+    }
+
+    main {
+        animation: fade 0.5s 2s forwards;
+        opacity: 0;
+    }
+
+    .aboutme {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: xx-large;
+        width: 35vw;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
+        border-radius: 8px;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+        font-family: monospace;
+    }
+
+    .pftf {
+        text-decoration: underline;
+        -webkit-text-decoration-color: var(--sec_bg);
+        -moz-text-decoration-color: var(--sec_bg);
+        text-decoration-color: var(--sec_bg);
+    }
+
+    .title {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .intro {
+        font-size: 65px;
+        font-weight: 900;
+        line-height: 1.1;
+        color: transparent;
+        background: linear-gradient(to left, var(--blue), var(--pink));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .wrapper h1 {
+        color: whitesmoke;
+        font-family: cursive;
+        overflow: hidden;
+        border-right: .15em solid transparent;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
+    }
+
+    .socials {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: var(--sec_bg);
+        width: 25vw;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+        border-radius: 8px;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+        box-shadow: 4px 4px 10px 2px var(--pink);
+    }
+
+    .socials:hover {
+        box-shadow: 4px 4px 20px 5px var(--blue);
+        transition: box-shadow .5s, -webkit-box-shadow .5s;
+    }
+
+    .social {
+        margin: .5em;
+        z-index: -1;
+    }
+
+    .social-icon {
+        height: 2em;
+        fill: var(--bg);
+        transition: fill .1s;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .spotify:hover {
+        fill: var(--spotify);
+        transition: fill .5s;
+    }
+
+    .twitter:hover {
+        fill: var(--twitter);
+        transition: fill .5s;
+    }
+
+    .steam:hover {
+        fill: var(--steam);
+        transition: fill .5s;
+    }
+
+    .ubisoft:hover {
+        fill: var(--ubisoft);
+        transition: fill .5s;
+    }
+
+    .github:hover {
+        fill: var(--github);
+        transition: fill .5s;
+    }
+
+    .discord-icon:hover {
+        fill: var(--discord);
+        transition: fill .5s;
+    }
+
+    .Discord {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+        margin-top: 2em;
+        border-radius: 8px;
+    }
+
+    .discord-activity {
+        box-shadow: 4px 4px 10px 2px var(--pink);
+        border-radius: 10px;
+        transition: box-shadow .5s, -webkit-box-shadow .5s;
+    }
+
+    a {
+        transition: all 2s;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .discord-activity:hover {
+        box-shadow: 4px 4px 20px 5px var(--blue);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background: var(--bg);
+        margin-top: 2em;
+        border-top: 16px transparent;
+    }
+
+    main {
+        animation: fade 0.5s 2s forwards;
+        opacity: 0;
+    }
+
+    .aboutme {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+        margin-top: 12.5vw;
+        border-radius: 8px;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+        font-family: monospace;
+    }
+
+    .title {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    #discord{
+        margin: 0 auto;
+    }
+
+    .intro {
+        font-size: xxx-large;
+        font-weight: 900;
+        line-height: 1.1;
+        color: transparent;
+        /*background: linear-gradient(to left, var(--blue), var(--pink));*/
+        background-color: var(--pink);
+        animation: textfading 5s infinite 2.5s;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-align: center;
+    }
+
+    .wrapper h1 {
+        color: whitesmoke;
+        font-family: cursive;
+        overflow: hidden;
+        border-right: .15em solid transparent;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
+    }
+
+    .socials {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: var(--sec_bg);
+        width: auto;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+        margin-top: 12.5vw;
+        border-radius: 8px;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+        box-shadow: 4px 4px 10px 2px var(--pink);
+        animation: colorfading 5s infinite;
+    }
+
+    .social {
+        margin: .5em;
+        z-index: -1;
+    }
+
+    .social-icon {
+        height: 2em;
+        fill: var(--bg);
+        transition: fill .1s;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .Discord {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+        margin-top: 12.5vw;
+        border-radius: 8px;
+    }
+
+    .discord-activity {
+        box-shadow: 4px 4px 10px 2px var(--pink);
+        border-radius: 10px;
+        animation: colorfading 5s infinite 1.25s;
+    }
+
+    a {
+        transition: all 2s;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
 
 
-.landing {
-    overflow: hidden
-}
 
-.landing-grid {
-    width: 100%;
-    height: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 50px;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-    margin-top: 10em;
-}
 
-.landing-grid>*:nth-child(1) {
-
-    -ms-grid-row: 1;
-
-    grid-row: 1;
-    -ms-grid-column: 1;
-    grid-column: 1;
-}
-
-.landing-grid>*:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-row: 1;
-    grid-column: 2;
-}
-
-main {
-    animation: fade 0.5s 2s forwards;
-    opacity: 0;
-}
-
-.aboutme {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font-size: xx-large;
-    width: 35vw;
-    margin-left: 7.5vw;
-    margin-right: 7.5vw;
-    border-radius: 8px;
-    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
-    font-family: monospace;
-}
-
-.pftf {
-    text-decoration: underline;
-    -webkit-text-decoration-color: var(--sec_bg);
-    -moz-text-decoration-color: var(--sec_bg);
-         text-decoration-color: var(--sec_bg);
-}
-
-.title {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.intro {
-    font-size: 65px;
-    font-weight: 900;
-    line-height: 1.1;
-    color: transparent;
-    background: linear-gradient(to left, var(--blue), var(--pink));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.wrapper h1 {
-    color: whitesmoke;
-    font-family: cursive;
-    overflow: hidden;
-    border-right: .15em solid transparent;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
-}
-
-.socials {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: var(--sec_bg);
-    width: 25vw;
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
-    border-radius: 8px;
-    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
-    box-shadow: 4px 4px 10px 2px var(--pink);
-}
-
-.socials:hover {
-    box-shadow: 4px 4px 20px 5px var(--blue);
-    transition: box-shadow .5s, -webkit-box-shadow .5s;
-}
-
-.social {
-    margin: .5em;
-    z-index: -1;
-}
-
-.social-icon {
-    height: 2em;
-    fill: var(--bg);
-    transition: fill .1s;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
-}
-
-.spotify:hover {
-    fill: var(--spotify);
-    transition: fill .5s;
-}
-
-.twitter:hover {
-    fill: var(--twitter);
-    transition: fill .5s;
-}
-
-.steam:hover {
-    fill: var(--steam);
-    transition: fill .5s;
-}
-
-.ubisoft:hover {
-    fill: var(--ubisoft);
-    transition: fill .5s;
-}
-
-.github:hover {
-    fill: var(--github);
-    transition: fill .5s;
-}
-
-.discord-icon:hover {
-    fill: var(--discord);
-    transition: fill .5s;
-}
-
-.Discord {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
-    margin-top: 2em;
-    border-radius: 8px;
-}
-
-.discord-activity {
-    box-shadow: 4px 4px 10px 2px var(--pink);
-    border-radius: 10px;
-    transition: box-shadow .5s, -webkit-box-shadow .5s;
-}
-
-a {
-    transition: all 2s;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.discord-activity:hover {
-    box-shadow: 4px 4px 20px 5px var(--blue);
-}
 
 /*TODO: Add Support for Mobile and Tablets*/
+
+/*Color changing text*/
+@keyframes textfading {
+    from, to {
+        background-color: var(--pink);
+    }
+
+    50% {
+        background-color: var(--blue);
+    }
+}
+
+/*Color changing shadows for mobile devices*/
+@keyframes colorfading {
+    from,to {
+        box-shadow: 4px 4px 10px 2px var(--pink);
+    }
+
+    50% {
+        box-shadow: 4px 4px 10px 2px var(--blue);
+    }
+}
+
 
 /* Fading Effect */
 
