@@ -37,7 +37,7 @@
         margin-top: 10em;
     }
 
-    .landing-grid>*:nth-child(1) {
+    .landing-grid > *:nth-child(1) {
 
         -ms-grid-row: 1;
 
@@ -46,7 +46,7 @@
         grid-column: 1;
     }
 
-    .landing-grid>*:nth-child(2) {
+    .landing-grid > *:nth-child(2) {
         -ms-grid-row: 1;
         -ms-grid-column: 2;
         grid-row: 1;
@@ -86,12 +86,6 @@
         -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
         filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
         font-family: monospace;
-    }
-
-    .pftf {
-        text-decoration: underline;
-        -webkit-text-decoration-color: var(--sec_bg);
-        text-decoration-color: var(--sec_bg);
     }
 
     .title {
@@ -201,13 +195,12 @@
         transition: fill .5s;
     }
 
-    .ubisoft:hover {
+    /*.ubisoft:hover {
         fill: var(--ubisoft);
         -webkit-transition: fill .5s;
         -o-transition: fill .5s;
         transition: fill .5s;
-    }
-
+    }*/
     .github:hover {
         fill: var(--github);
         -webkit-transition: fill .5s;
@@ -413,8 +406,6 @@
         display: flex;
     }
 }
-
-
 
 
 /*Color changing text*/
