@@ -1,0 +1,167 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --pink: #e2059cff;
+    --blue: #5300ffff;
+    --bg: #211a1dff;
+    --sec_bg: #474d58;
+    --spotify: #1DB954;
+    --discord: #5865F2;
+    --twitter: white;
+    --steam: #1b2838;
+    --ubisoft: #ffffff;
+    --github: #000000;
+    color-scheme: dark;
+}
+
+body {
+    background: var(--bg);
+}
+
+main {
+    -webkit-animation: fade 0.5s 2s forwards;
+    animation: fade 0.5s 2s forwards;
+    opacity: 0;
+}
+
+#status {
+    width: 99vw;
+    height: 89vh;
+}
+
+#title {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+#titlewrapper h1 {
+    color: transparent;
+    background-color: var(--blue);
+    font-family: cursive;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    -webkit-animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
+    animation: typing 2s steps(24, end), blink-caret .7s .2s step-end 3, textfading 5s infinite 2s;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#iframe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Color changing text*/
+@-webkit-keyframes textfading {
+
+    from,
+    to {
+        background-color: var(--blue);
+    }
+
+    50% {
+        background-color: var(--pink);
+    }
+}
+
+@keyframes textfading {
+
+    from,
+    to {
+        background-color: var(--blue);
+    }
+
+    50% {
+        background-color: var(--pink);
+    }
+}
+
+/* Typing effect */
+
+@-webkit-keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Effect */
+
+@-webkit-keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--blue)
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--blue)
+    }
+}
