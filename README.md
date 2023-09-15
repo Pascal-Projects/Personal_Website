@@ -2,6 +2,8 @@
 This is the source code of my personal website. <br>
 You can visit it here: https://pascal-projects.me
 
+A Backup is also hosted on google firebase: https://pascal-projects.web.app/
+
 
 
 Feel free to get inspired and if you have any questions you can reach me on discord: <br><br>
