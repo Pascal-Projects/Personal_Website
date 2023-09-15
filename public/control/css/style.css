@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+/*noinspection DuplicatedCode*/
 :root {
     --pink: #e2059cff;
     --blue: #5300ffff;
@@ -34,6 +35,7 @@ main {
     height: 89vh;
 }
 
+/*noinspection DuplicatedCode*/
 #title {
     padding-top: 1em;
     padding-bottom: 1em;

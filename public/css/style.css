@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+/*noinspection DuplicatedCode*/
 :root {
     --pink: #e2059cff;
     --blue: #5300ffff;
@@ -66,6 +67,7 @@
         opacity: 0;
     }
 
+    /*noinspection DuplicatedCode*/
     .aboutme {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -88,6 +90,7 @@
         font-family: monospace;
     }
 
+    /*noinspection DuplicatedCode*/
     .title {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -130,6 +133,8 @@
         animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
     }
 
+
+    /*noinspection DuplicatedCode*/
     .socials {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -215,6 +220,8 @@
         transition: fill .5s;
     }
 
+
+    /*noinspection DuplicatedCode*/
     .Discord {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -268,6 +275,8 @@
         opacity: 0;
     }
 
+
+    /*noinspection DuplicatedCode*/
     .aboutme {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -289,6 +298,8 @@
         font-family: monospace;
     }
 
+
+    /*noinspection DuplicatedCode*/
     .title {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -336,6 +347,8 @@
         animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
     }
 
+
+    /*noinspection DuplicatedCode*/
     .socials {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -374,6 +387,8 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
     }
 
+
+    /*noinspection DuplicatedCode*/
     .Discord {
         display: -ms-flexbox;
         display: -webkit-box;
