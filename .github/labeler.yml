@@ -2,5 +2,5 @@ css: '**/*.css'
 js: '**/*.js'
 html: '**/*.html'
 home:
-  - any: [ 'public/**', '!public/control/*' ]
+  - any: [ 'public/**', '!public/control/**' ]
 control: public/control/**/*
