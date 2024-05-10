@@ -11,6 +11,7 @@
 
 <body>
     <script src="./js/discordUpdate.js"></script>
+    <script src="./js/socialGlowing.js"></script>
     <div class="title">
         <div class="wrapper">
             <h1>Hi, I'm Pascal</h1>
@@ -22,9 +23,9 @@
             <div class="landing-grid">
                 <div class="col_social">
                     <div class="socials-wrapper">
-                        <div class="socials">
+                        <div class="socials" id="socials">
                             <a class="social" href="https://github.com/Pascal-Projects" rel="noopener" target="_blank"
-                                title="Pascal Projects">
+                                title="Pascal Projects" onmouseover="changeGlow(1)" onmouseout="resetGlow(1)">
                                 <svg class="social-icon github" role="img" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -42,7 +43,7 @@
                             </svg>
                         </a> -->
                             <a href="https://discordapp.com/users/852617434703855616" title="Discord" rel="noopener"
-                                target="_blank" class="social">
+                                target="_blank" class="social" onmouseover="changeGlow(2)" onmouseout="resetGlow(1)">
                                 <svg class="social-icon discord-icon" role="img" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -51,7 +52,7 @@
                                 </svg>
                             </a>
                             <a class="social" href="https://twitter.com/Pascal59720888" target="_blank" title="twitter"
-                                rel="noopener">
+                                rel="noopener"  onmouseover="changeGlow(3)" onmouseout="resetGlow(1)">
                                 <svg class="social-icon twitter" role="img" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>Twitter</title>
@@ -61,7 +62,7 @@
                                 </svg>
                             </a>
                             <a href="https://open.spotify.com/user/6jam81se6khx5q6dho8o5cpwn?si=8d83b8a91e7740dd"
-                                class="social" target="_blank" title="Spotify" rel="noopener">
+                                class="social" target="_blank" title="Spotify" rel="noopener"  onmouseover="changeGlow(4)" onmouseout="resetGlow(1)">
                                 <svg class="social-icon spotify" role="img" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>Spotify</title>
@@ -70,7 +71,7 @@
                                 </svg>
                             </a>
                             <a href="https://steamcommunity.com/id/P4sc4l4/" class="social" target="_blank"
-                                title="steam" rel="noopener">
+                                title="steam" rel="noopener"  onmouseover="changeGlow(5)" onmouseout="resetGlow(1)">
                                 <svg class="social-icon steam" role="img" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>Steam</title>
