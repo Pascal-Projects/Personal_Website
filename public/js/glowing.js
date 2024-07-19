@@ -12,6 +12,14 @@ function changeGlow(app) {
     }
 }
 
-function resetGlow(container) {
+function resetGlow() {
         document.getElementById("socials").style.boxShadow = "4px 4px 10px 2px var(--pink)"
 } 
+
+function textGlow(){
+    document.getElementById("imgtext").style.color = "var(--blue)"
+}
+
+function textGlowDown() {
+    document.getElementById("imgtext").style.color = "var(--pink)"
+}
