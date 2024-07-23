@@ -10,6 +10,7 @@
     --pink: #e2059c;
     --blue: #5300ff;
     --bg: #211a1dff;
+    --bg_white: #ffffff;
     --sec_bg: #474d58;
     --spotify: #1DB954;
     --discord: #5865F2;
@@ -78,14 +79,14 @@
         -ms-flex-pack: center;
         -webkit-box-pack: center;
         justify-content: center;
-        font-size: xx-large;
-        width: 35vw;
-        margin-left: 7.5vw;
-        margin-right: 7.5vw;
+        width: 25vw;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
         border-radius: 8px;
         -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
         filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
         font-family: monospace;
+        text-align: center;
     }
 
     /*noinspection DuplicatedCode*/
@@ -103,7 +104,7 @@
     }
 
     .intro {
-        font-size: 65px;
+        font-size: 4.1vw;
         font-weight: 900;
         line-height: 1.1;
         color: transparent;
@@ -121,6 +122,7 @@
 
     .wrapper h1 {
         color: whitesmoke;
+        /* color: var(--bg); */
         font-family: cursive, Arial;
         overflow: hidden;
         border-right: .15em solid transparent;
@@ -158,6 +160,7 @@
         box-shadow: 4px 4px 10px 2px var(--pink);
         transition: box-shadow .5s, -webkit-box-shadow .5s;
         box-sizing: border-box;
+        cursor: pointer;
     }
 
     .photos:hover {
@@ -181,6 +184,8 @@
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
+        user-select: none;
+        -webkit-user-select: none;
     }
 
 
@@ -199,6 +204,7 @@
         justify-content: center;
         background-color: var(--sec_bg);
         width: 25vw;
+        height: 4.5vw;
         margin-left: 12.5vw;
         margin-right: 12.5vw;
         border-radius: 8px;
@@ -216,53 +222,60 @@
     }
 
     .social {
-        margin: .5em;
         z-index: -1;
     }
 
     .social-icon {
-        height: 2em;
+        width: 3vw;
+        margin-top: .5vw;
+        margin-bottom: .5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
         fill: var(--bg);
-        -webkit-transition: fill .1s;
-        -o-transition: fill .1s;
-        transition: fill .1s;
+        -webkit-transition: fill .5s, width .5s;
+        -o-transition: fill .5s, width .5s;
+        transition: fill .5s, width .5s;
         -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
     }
 
     .spotify:hover {
         fill: var(--spotify);
-        -webkit-transition: fill .5s;
+        /* -webkit-transition: fill .5s;
         -o-transition: fill .5s;
-        transition: fill .5s;
+        transition: fill .5s; */
+        width: 3.5vw;
     }
 
     .twitter:hover {
         fill: var(--twitter);
-        -webkit-transition: fill .5s;
+        /* -webkit-transition: fill .5s;
         -o-transition: fill .5s;
-        transition: fill .5s;
+        transition: fill .5s; */
     }
 
     .steam:hover {
         fill: var(--steam);
-        -webkit-transition: fill .5s;
+        /* -webkit-transition: fill .5s;
         -o-transition: fill .5s;
-        transition: fill .5s;
+        transition: fill .5s; */
+        width: 3.5vw;
     }
 
     .github:hover {
         fill: var(--github);
-        -webkit-transition: fill .5s;
+        /* -webkit-transition: fill .5s;
         -o-transition: fill .5s;
-        transition: fill .5s;
+        transition: fill .5s; */
+        width: 3.5vw;
     }
 
     .discord-icon:hover {
         fill: var(--discord);
-        -webkit-transition: fill .5s;
+        /* -webkit-transition: fill .5s;
         -o-transition: fill .5s;
-        transition: fill .5s;
+        transition: fill .5s; */
+        width: 3.5vw;
     }
 
 
