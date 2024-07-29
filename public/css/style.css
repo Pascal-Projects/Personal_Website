@@ -350,7 +350,7 @@
         justify-content: center;
         margin-left: 12.5vw;
         margin-right: 12.5vw;
-        margin-top: 12.5vw;
+        margin-top: 5vw;
         border-radius: 8px;
         -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
         filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
@@ -370,6 +370,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        font-size: 4vw;
     }
 
     #discord {
@@ -382,7 +383,7 @@
         line-height: 1.1;
         color: transparent;
         background-color: var(--pink);
-        -webkit-animation: textfading 5s infinite 2.5s;
+        -webkit-animation: textfading 5s infinite 3.75s;
         animation: textfading 5s infinite 2.5s;
         -webkit-background-clip: text;
         background-clip: text;
@@ -435,15 +436,69 @@
     }
 
     .social {
-        margin: .5em;
+        margin: 3vw;
         z-index: -1;
     }
 
     .social-icon {
-        height: 2em;
+        width: 10vw;
         fill: var(--bg);
         -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .photos {
+        font-family: monospace;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+        margin-top: 5vw;
+        border-radius: 8px;
+        background-color: var(--sec_bg);
+        color: var(--bg);
+        /* width: 75vw;
+        height: auto; */
+        -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+        -webkit-box-shadow: 4px 4px 10px 2px var(--pink);
+        box-shadow: 4px 4px 10px 2px var(--pink);
+        transition: box-shadow .5s, -webkit-box-shadow .5s;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-animation: colorfading 5s infinite 2.5s;
+        animation: colorfading 5s infinite 2.5s;
+    }
+
+    .textphoto {
+        color: white;
+        font-family: monospace;
+        font-size: 14vw;
+        font-weight: bold;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-user-select: none;
+        user-select: none;
+        z-index: 2;
+    }
+
+    .photos img {
+        margin-right: 12.5vw;
+        margin-left: 12.5vw;
+        border-radius: 8px;
+        width: 71.5vw;
+        height: auto;
     }
 
 
@@ -462,7 +517,7 @@
         justify-content: center;
         margin-left: 12.5vw;
         margin-right: 12.5vw;
-        margin-top: 12.5vw;
+        margin-top: 5vw;
         border-radius: 8px;
     }
 
