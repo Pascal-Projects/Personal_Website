@@ -56,7 +56,6 @@
 
     body {
         background: var(--bg);
-        padding-top: 5em;
         overflow-x: hidden;
         margin: 0
     }
@@ -65,6 +64,27 @@
         -webkit-animation: fade 0.5s 2s forwards;
         animation: fade 0.5s 2s forwards;
         opacity: 0;
+    }
+
+    .toggleDiv {
+        text-align: right;
+        width: 100%;
+    }
+
+    .toggle {
+        background: -webkit-gradient(linear, right top, left top, from(var(--blue)), to(var(--pink)));
+        background: -o-linear-gradient(right, var(--blue), var(--pink));
+        background: linear-gradient(to left, var(--blue), var(--pink));
+        padding: .5vw;
+        border-radius: 50%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        right: 0;
+        text-align: right;
+        margin-right: 1vw;
+        margin-top: 1vw;
+        cursor: pointer;
     }
 
     /*noinspection DuplicatedCode*/
@@ -324,16 +344,37 @@
 @media (max-width: 600px) {
     body {
         background: var(--bg);
-        margin-top: 2em;
         border-top: 16px transparent;
     }
-
+    
     main {
+        padding-top: 1vw;
+        margin-top: 2em;
         -webkit-animation: fade 0.5s 2s forwards;
         animation: fade 0.5s 2s forwards;
         opacity: 0;
     }
 
+    .toggleDiv {
+        text-align: right;
+        width: 100%;
+    }
+
+    .toggle {
+        background: -webkit-gradient(linear, right top, left top, from(var(--blue)), to(var(--pink)));
+        background: -o-linear-gradient(right, var(--blue), var(--pink));
+        background: linear-gradient(to left, var(--blue), var(--pink));
+        padding: .5vw;
+        border-radius: 50%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        right: 0;
+        text-align: right;
+        margin-right: 1vw;
+        margin-top: 1vw;
+        cursor: pointer;
+    }
 
     /*noinspection DuplicatedCode*/
     .aboutme {
@@ -360,6 +401,7 @@
 
     /*noinspection DuplicatedCode*/
     .title {
+        margin-top: 1vw;
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
@@ -425,7 +467,7 @@
         width: auto;
         margin-left: 12.5vw;
         margin-right: 12.5vw;
-        margin-top: 12.5vw;
+        margin-top: 5vw;
         border-radius: 8px;
         -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
         filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
