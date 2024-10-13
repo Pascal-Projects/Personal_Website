@@ -1,0 +1,117 @@
+:root {
+    --pink: #e2059c;
+    --blue: #5300ff;
+    --bg: #211a1dff;
+    --bg_white: #ffffff;
+    --sec_bg: #474d58;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: var(--bg);
+        color-scheme: dark;
+        color: whitesmoke;
+    }
+
+    main {
+        -webkit-animation: fade 0.5s 2s forwards;
+        animation: fade 0.5s 2s forwards;
+        opacity: 0;
+    }
+
+    .title {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .headDark {
+        color: whitesmoke;
+        /* color: var(--bg); */
+        font-family: cursive, Arial;
+        overflow: hidden;
+        border-right: .15em solid transparent;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        -webkit-animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
+        animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
+    }
+}
+
+/* Fading Effect */
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Typing effect */
+
+@-webkit-keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Effect */
+
+@-webkit-keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--blue)
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--blue)
+    }
+}
