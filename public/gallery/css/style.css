@@ -6,45 +6,193 @@
     --sec_bg: #474d58;
 }
 
-@media (min-width: 600px) {
-    body {
-        background-color: var(--bg);
-        color-scheme: dark;
-        color: whitesmoke;
-    }
 
-    main {
-        -webkit-animation: fade 0.5s 2s forwards;
-        animation: fade 0.5s 2s forwards;
-        opacity: 0;
-    }
-
-    .title {
-        display: -ms-flexbox;
-        display: -webkit-box;
-        display: flex;
-        -ms-flex-pack: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-
-    .headDark {
-        color: whitesmoke;
-        /* color: var(--bg); */
-        font-family: cursive, Arial;
-        overflow: hidden;
-        border-right: .15em solid transparent;
-        white-space: nowrap;
-        margin: 0 auto;
-        letter-spacing: .15em;
-        -webkit-animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
-        animation: typing 2s steps(28, end), blink-caret .7s step-end 3;
-    }
+body {
+    background-color: var(--bg);
+    color-scheme: dark;
+    color: whitesmoke;
 }
+
+main {
+    -webkit-animation: fade 0.5s 1s forwards;
+    animation: fade 0.5s 1s forwards;
+    opacity: 0;
+}
+
+.title {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.headDark {
+    color: whitesmoke;
+    font-family: cursive, Arial;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row>.column {
+    padding: 0.1vw 0.2vw;
+}
+
+@media (max-width: 600px) {
+    /* Create two equal columns that float next to eachother */
+    .column {
+        float: left;
+        width: 49%;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    /* Create four equal columns that float next to eachother */
+    .column {
+        float: left;
+        width: 24%;
+    }
+
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+.mySlides>img {
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.active {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 /* Fading Effect */
 
@@ -65,53 +213,5 @@
 
     to {
         opacity: 1;
-    }
-}
-
-/* Typing effect */
-
-@-webkit-keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-/* Cursor Effect */
-
-@-webkit-keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: var(--blue)
-    }
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: var(--blue)
     }
 }

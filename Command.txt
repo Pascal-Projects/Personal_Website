@@ -1,0 +1,1 @@
+dir /b C:\Users\pasca\OneDrive\Dokumente\GitHub\Personal_Website\public\gallery\images > Bilderliste.txt
