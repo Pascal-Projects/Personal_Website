@@ -2,9 +2,16 @@
   "hosting": {
     "public": "public",
     "ignore": [
-      "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "./Bilderliste.txt",
+      "./Command.txt",
+      "./Bilderliste2.txt",
+      ".git",
+      ".runtimeconfig.json",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "node_modules"
     ]
   }
 }

@@ -11,6 +11,7 @@
 
 <script src="./js/addImages.js"></script>
 <script src="./js/modal.js"></script>
+<script src="./js/filter.js"></script>
 
 <body>
 
@@ -21,28 +22,58 @@
     </div>
 
     <main id="main">
+
+        <!-- Dropdown for the filter -->
+        <div class="dropdown-wrapper">
+            <select title="Filter" name="filter" id="dropdown">
+                <option value="all">Show all</option>
+                <option value="Nature">Nature</option>
+                <option value="City">City</option>
+                <option value="Beach">Beach</option>
+                <option value="Landscape">Landscape</option>
+                <option value="Sunset">Sunset</option>
+                <option value="BnW">Black/White</option>
+            </select>
+        </div>
+
+        <div class="filter-wrapper">
+            <div class="filter" id="filter">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filter('all')">All</button>
+                    <button class="btn" onclick="filter('Nature')">Nature</button>
+                    <button class="btn" onclick="filter('City')">City</button>
+                    <button class="btn" onclick="filter('Beach')">Beach</button>
+                    <button class="btn" onclick="filter('Landscape')">Landscape</button>
+                    <button class="btn" onclick="filter('Sunset')">Sunset</button>
+                    <button class="btn" onclick="filter('BnW')">Black/White</button>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- Images used to open the lightbox -->
         <div class="row" id="row">
             <!-- <div class="column">
-                <a href="javascript:void(0);" onclick="openModal();currentSlide(1)">
-                    <img src="./images/DSC01752.JPG" class="hover-shadow" width="100%" alt="Bild">
-                </a>
-            </div>
-            <div class="column">
-                <a href="javascript:void(0);" onclick="openModal();currentSlide(2)">
-                    <img src="./images/DSC01761.JPG" class="hover-shadow" width="100%" alt="Bild">
-                </a>
-            </div>
-            <div class="column">
-                <a href="javascript:void(0);" onclick="openModal();currentSlide(3)">
-                    <img src="./images/DSC01767.JPG" class="hover-shadow" width="100%" alt="Bild">
-                </a>
-            </div>
-            <div class="column">
-                <a href="javascript:void(0);" onclick="openModal();currentSlide(4)">
-                    <img src="./images/DSC01778.JPG" class="hover-shadow" width="100%" alt="Bild">
-                </a>
-            </div> -->
+                        <a href="javascript:void(0);" onclick="openModal();currentSlide(1)">
+                            <img src="./images/DSC01752.JPG" class="hover-shadow" width="100%" alt="Bild">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="javascript:void(0);" onclick="openModal();currentSlide(2)">
+                            <img src="./images/DSC01761.JPG" class="hover-shadow" width="100%" alt="Bild">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="javascript:void(0);" onclick="openModal();currentSlide(3)">
+                            <img src="./images/DSC01767.JPG" class="hover-shadow" width="100%" alt="Bild">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="javascript:void(0);" onclick="openModal();currentSlide(4)">
+                            <img src="./images/DSC01778.JPG" class="hover-shadow" width="100%" alt="Bild">
+                        </a>
+                    </div> -->
         </div>
 
         <!-- The Modal/Lightbox -->
@@ -50,25 +81,8 @@
             <button class="close cursor" onclick="closeModal()" aria-label="Close modal">&times;</button>
             <div class="modal-content" id="modal-content">
 
-                <!-- <div class="mySlides">
-                    <img src="./images/DSC01752.JPG" alt="Bild1">
-                </div>
+                <!-- Here are the pictures for the modal placed by the filter.js script -->
 
-                <div class="mySlides">
-                    <img src="./images/DSC01761.JPG" alt="Bild2">
-                </div>
-
-                <div class="mySlides">
-                    <img src="./images/DSC01767.JPG" alt="Bild3">
-                </div>
-
-                <div class="mySlides">
-                    <img src="./images/DSC01778.JPG" alt="Bild4">
-                </div> -->
-
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)" onkeypress="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
     </main>
